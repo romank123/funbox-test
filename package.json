@@ -1,0 +1,83 @@
+{
+  "name": "webpack5-pug-sass-starter",
+  "version": "1.0.0",
+  "description": "Webpack 5 configuration for build websites using Pug, Sass, PostCSS, Babel and Browsersync",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "lint": "eslint --ext .js ./src/js",
+    "lint:fix": "eslint --ext .js --fix ./src/js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "webpack 5",
+    "webpack multipage",
+    "webpack sass",
+    "webpack pug",
+    "sass",
+    "pug"
+  ],
+  "author": "Roman Kobeev",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.18.0",
+    "@babel/eslint-parser": "7.17.0",
+    "@babel/plugin-proposal-class-properties": "7.17.12",
+    "@babel/plugin-proposal-object-rest-spread": "7.18.0",
+    "@babel/preset-env": "7.18.0",
+    "@webdiscus/pug-loader": "2.2.1",
+    "autoprefixer": "10.4.5",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.5",
+    "babel-preset-env": "1.7.0",
+    "browser-sync": "2.27.10",
+    "browser-sync-webpack-plugin": "2.3.0",
+    "bufferutil": "4.0.6",
+    "copy-webpack-plugin": "11.0.0",
+    "cross-env": "7.0.3",
+    "css-loader": "6.7.1",
+    "css-minimizer-webpack-plugin": "4.0.0",
+    "eslint": "8.15.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-loader": "4.0.2",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-promise": "6.0.0",
+    "eslint-plugin-standard": "5.0.0",
+    "fibers": "5.0.1",
+    "file-loader": "6.2.0",
+    "html-webpack-plugin": "5.5.0",
+    "husky": "8.0.1",
+    "mini-css-extract-plugin": "2.6.0",
+    "postcss": "8.4.14",
+    "postcss-loader": "7.0.0",
+    "prettier": "2.6.2",
+    "pug": "3.0.2",
+    "raw-loader": "4.0.2",
+    "replace-ext": "2.0.0",
+    "sass": "1.52.0",
+    "sass-loader": "13.0.0",
+    "sass-rem": "3.0.0",
+    "style-loader": "3.3.1",
+    "terser-webpack-plugin": "5.3.1",
+    "typescript": "4.6.4",
+    "webpack": "5.72.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "4.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/romank123"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "dependencies": {
+    "latest": "^0.2.0"
+  }
+}

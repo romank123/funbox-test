@@ -1,0 +1,192 @@
+body
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01) 50%), linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01) 50%), url( "../images/bg.png")
+  overflow: auto
+
+.wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  @media (min-width: 992px)
+    height: 100vh
+    width: 100vw
+
+h1
+  margin-top: 36px
+  font-family: Exo-Thin, sans-serif
+  font-weight: 300
+  font-size: 36px
+  line-height: 44px
+  color: #FFFFFF
+  text-shadow: 0 1px 1px #000000
+  display: flex
+  justify-content: center
+  margin-bottom: 24px
+
+.content-wrapper
+  width: 1280px
+  margin: 0 auto
+
+.container
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+
+.card-block
+  background: transparent linear-gradient(-225deg, transparent 40px, #F2F2F2 0)
+  border-radius: 10px
+  height: 100%
+  cursor: pointer
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.card-wrapper
+  display: flex
+  flex-direction: column
+  margin-bottom: 2rem
+
+.card-link
+  font-family: 'Trebuchet MS', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 13px
+  line-height: 15px
+  color: #FFFFFF
+
+.block-wrapper
+  background: #1698D9
+  clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 0 100%, 0 58px, 58px 0%)
+  padding: 4px
+  border-radius: 12px
+  width: 320px
+  height: 480px
+
+.block-wrapper.active
+  background: #D91667
+  .weight-number
+    background: #D91667
+
+.subtitle
+  font-family: 'Trebuchet MS', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 16px
+  color: #666666
+  margin-bottom: 5px
+
+.bg-custom
+  color: #D91667
+
+.card-header
+  padding: 22px 60px 0 45px
+
+.card-body
+  display: flex
+  align-items: flex-end
+  min-width: 0
+  position: relative
+  & img
+    min-width: 0
+    display: block
+
+.title
+  font-family: 'Trebuchet MS', sans-serif
+  font-style: normal
+  font-weight: 700
+  font-size: 48px
+  color: #000000
+  margin-bottom: 5px
+
+.title-with
+  font-family: 'Trebuchet MS', sans-serif
+  font-style: normal
+  font-weight: 700
+  font-size: 24px
+  color: #000000
+  margin-bottom: 15px
+
+.title-bonus
+  font-family: 'Trebuchet MS', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 16px
+  color: #666666
+
+.title-bonus span
+  font-weight: 700
+
+.card-link-text
+  font-family: 'Trebuchet MS', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 13px
+  color: #FFFFFF
+  margin-top: 14px
+  text-align: center
+
+
+
+.card-link
+  font-family: 'Trebuchet MS', sans-serif
+  font-style: normal
+  font-weight: 700
+  font-size: 13px
+  color: #1698D9
+  text-decoration: none
+  border-bottom: 1px dashed #1698D9
+
+.weight-number
+  position: absolute
+  bottom: 16px
+  right: 16px
+  background-color: #1698D9
+  border-radius: 50%
+  font-family: 'Trebuchet MS', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 42px
+  line-height: 22px
+  color: #FFFFFF
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 80px
+  height: 80px
+  padding-top: 18px
+
+.weight-number span
+  font-size: 21px
+  //padding-top: 10px
+  line-height: 1.8
+
+.disabled
+  .card-link-text
+    color: #FFFF66
+
+  .block-wrapper
+    background-color: #B3B3B3
+    pointer-events: none
+    position: relative
+    p
+      color: #B3B3B3
+    &:after
+      position: absolute
+      content: ''
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background-color: #B3B3B3
+      opacity: .5
+
+
+
+
+
+
+
+
+
+
