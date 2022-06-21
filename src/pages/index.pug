@@ -6,6 +6,12 @@ html(lang='ru')
     title
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    //- Add favicon
+    link(rel='icon' href=require('Images/kote.png') type='image/png')
+
+    //- Use source styles directly in Pug
+    link(href=require('Styles/style.sass') rel='stylesheet')
   body
     .wrapper
       .content-wrapper
@@ -22,7 +28,7 @@ html(lang='ru')
                     span 10 !{' '}
                     |порций мышь <br> в подарок
                 .card-body
-                  img(src="images/kote.png" alt="#")
+                  img(src=require("Images/kote.png") alt="#")
                   .weight-number 0,5
                     span кг
 
@@ -44,7 +50,7 @@ html(lang='ru')
                     span 2 !{' '}
                     |мыши в подарок
                 .card-body
-                  img(src="images/kote.png" alt="#")
+                  img(src=require("Images/kote.png") alt="#")
                   .weight-number 2
                     span кг
 
@@ -65,12 +71,15 @@ html(lang='ru')
                     |мышей в подарок <br>
                     |заказчик доволен
                 .card-body
-                  img(src="images/kote.png" alt="#")
+                  img(src=require("Images/kote.png") alt="#")
                   .weight-number 5
                     span кг
 
             p(data-id="3").card-link-text Печалька, с курой закончился
               //a(href="#").card-link купи
+  
+  //- Use source script directly in Pug
+  script(src=require('Scripts/app.js'))
 
 
 
